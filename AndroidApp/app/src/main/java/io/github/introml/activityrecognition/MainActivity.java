@@ -19,7 +19,7 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener, TextToSpeech.OnInitListener {
 
-    private static final int N_SAMPLES = 200;
+    private static final int N_SAMPLES = 30;
     private static List<Float> x;
     private static List<Float> y;
     private static List<Float> z;
@@ -116,8 +116,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             joggingTextView.setText(Float.toString(round(results[1], 2)));
             sittingTextView.setText(Float.toString(round(results[2], 2)));
             standingTextView.setText(Float.toString(round(results[3], 2)));
-            upstairsTextView.setText(Float.toString(round(results[4], 2)));
-            walkingTextView.setText(Float.toString(round(results[5], 2)));
+//            upstairsTextView.setText(Float.toString(round(results[4], 2)));
+//            walkingTextView.setText(Float.toString(round(results[5], 2)));
 
             x.clear();
             y.clear();
